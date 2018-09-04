@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/device-io-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/diozero-core-0.11-20170714.131053-11.jar"/>
+	<classpathentry kind="lib" path="lib/diozero-core-0.9.jar"/>
+	<classpathentry kind="lib" path="lib/diozero-provider-jdkdio11-0.11-20170714.131145-11.jar"/>
+	<classpathentry kind="lib" path="lib/diozero-provider-jpi-0.9.jar"/>
+	<classpathentry kind="lib" path="lib/diozero-provider-pigpio-0.11-20170714.131221-11.jar"/>
+	<classpathentry kind="lib" path="lib/diozero-provider-wiringpi-0.11-20170714.131238-11.jar"/>
+	<classpathentry kind="lib" path="lib/pi4j-core-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/pigpioj-java-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/tinylog-1.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,10 +1,10 @@
-package lib.commandbased;
+package commandbased;
 
 import java.security.InvalidParameterException;
 import java.util.HashSet;
 import java.util.Set;
 
-import lib.util.MathUtil;
+import util.MathUtil;
 
 /**
  * Simulates the SmartDashboard by putting data to the console to be received by the GUI.

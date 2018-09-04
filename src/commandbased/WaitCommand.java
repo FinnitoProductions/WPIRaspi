@@ -1,4 +1,4 @@
-package lib.commandbased;
+package commandbased;
 
 /**
  * A {@link WaitCommand} will wait for a certain amount of time before

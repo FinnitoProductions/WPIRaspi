@@ -1,4 +1,4 @@
-package lib.devices;
+package devices;
 
 import java.util.HashMap;
 import java.util.Map;

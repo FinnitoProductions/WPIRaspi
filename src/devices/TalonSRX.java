@@ -1,4 +1,4 @@
-package lib.devices;
+package devices;
 
 import java.security.InvalidParameterException;
 import java.util.HashMap;
@@ -6,8 +6,8 @@ import java.util.Map;
 
 import com.diozero.api.*;
 
-import lib.util.Constants;
-import lib.util.MathUtil;
+import util.Constants;
+import util.MathUtil;
 
 
 /**

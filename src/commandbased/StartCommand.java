@@ -1,4 +1,4 @@
-package lib.commandbased;
+package commandbased;
 
 /**
  * A {@link StartCommand} will call the {@link Command#start() start()} method

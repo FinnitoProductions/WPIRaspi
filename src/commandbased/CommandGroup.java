@@ -1,4 +1,4 @@
-package lib.commandbased;
+package commandbased;
 
 import java.util.ArrayList;
 

@@ -1,7 +1,7 @@
-package lib.commandbased;
+package commandbased;
 
-import lib.util.ConsoleReader;
-import lib.util.SocketReader;
+import util.ConsoleReader;
+import util.SocketReader;
 
 /**
  * Represents a robot which is controlled by timed segments.

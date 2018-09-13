@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"devices"}]
+packageSearchIndex = [{"l":"commandbased"},{"l":"devices"},{"l":"util"}]

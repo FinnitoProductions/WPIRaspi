@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"devices","c":"DigitalMotor","l":"DigitalMotor(int, int, int)"},{"p":"devices","c":"DigitalMotor","l":"setValue(float)"}]

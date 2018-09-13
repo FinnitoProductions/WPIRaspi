@@ -13,7 +13,7 @@ import com.pi4j.io.gpio.RaspiPin;
 import com.pi4j.wiringpi.Gpio;
 
 /**
- * @author joel & Finn Frankis
+ * @author joel + Finn Frankis
  */
 public class DigitalMotor implements com.diozero.api.OutputDeviceInterface {
 	

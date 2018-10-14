@@ -141,24 +141,27 @@ public class PIDController
      */
     public double getOutput (double actual, double setpoint)
     {
+        double currentTime = System.currentTimeMillis();
         double error = setpoint - actual;
         
         double output_F = kF.get(primarySlot) * setpoint;
         
         double output_P = kP.get(primarySlot) * error;
         
-        if (Math.abs(error) >= iZone.get(primarySlot))
-            errorSum = 0;
-        double output_I = kI.get(primarySlot) * errorSum;
-        errorSum += error;
-        
+        double output_I = 0;
         double output_D = 0; 
-        if (hasRun)
+        if (hasRun) {
+            if (Math.abs(error) >= iZone.get(primarySlot))
+                errorSum = 0;
+            double output_I = kI.get(primarySlot) * errorSum;
+            errorSum += error * (currentTime - lastTime);
+            
             output_D = -kD.get(primarySlot) * (error - lastError) 
-                / (System.currentTimeMillis() - lastTime);
+                    / (currentTime - lastTime);
+        }
 
         lastError = error;
-        lastTime = System.currentTimeMillis();
+        lastTime = currentTime;
 
         
         return RangeUtil.constrain(output_F + output_P + output_I + output_D, minOutput, maxOutput);

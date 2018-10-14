@@ -50,8 +50,6 @@ public class Encoder extends FeedbackSensor
             @Override
             public void handleGpioPinDigitalStateChangeEvent(GpioPinDigitalStateChangeEvent changeEvent)
             {
-//                System.out.println("B " + ((changeEvent.getEdge() != PinEdge.BOTH && changeEvent.getEdge() != PinEdge.NONE)
-//                        ? (changeEvent.getEdge() == PinEdge.RISING ? 1 : -1) : 0) + " " + System.currentTimeMillis());
                 if (!changeEvent.getEdge().equals(PinEdge.BOTH) && !changeEvent.getEdge().equals(PinEdge.NONE))
                 {
                     addToPosition(changeEvent.getEdge().equals(PinEdge.RISING) == orangeInput.getState().equals(PinState.HIGH) ? 1 : -1);
